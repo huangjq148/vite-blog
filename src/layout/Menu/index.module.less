@@ -1,0 +1,39 @@
+.menuWrap {
+  width: 100%;
+  box-shadow: rgb(175, 175, 175) 0 0 4px;
+  border-radius: 2px;
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .title {
+    background-color: #222;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    li {
+      height: 26px;
+      line-height: 26px;
+      font-size: 13px;
+      color: #555;
+      padding: 5px 20px;
+      &.active {
+        background-color: #f5f5f5;
+      }
+      &:hover {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
