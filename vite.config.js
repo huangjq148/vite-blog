@@ -10,6 +10,7 @@ function pathResolve(dir) {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [md(), react()],
+  base: "./",
   resolve: {
     alias: [
       {
