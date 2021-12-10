@@ -8,7 +8,7 @@
     .titleWrap {
       font-size: 27px;
       font-weight: 400;
-      color: #555;
+      color: var(--TitleBlack);
       text-align: center;
 
       .title {
@@ -22,7 +22,7 @@
           content: " ";
           height: 2px;
           width: 100%;
-          background-color: #555;
+          background-color: var(--TitleBlack);
           transition-delay: 0s;
           transition-duration: 0.2s;
           transition-timing-function: ease-in-out;
@@ -38,7 +38,7 @@
     }
 
     .articleInfo {
-      color: #999;
+      color: var(--DescBlack);
       font-size: 13px;
       margin-top: 10px;
       text-align: center;
@@ -81,7 +81,7 @@
         &::after {
           content: " ";
           position: absolute;
-          border-left: 1px solid #999;
+          border-left: 1px solid var(--DescBlack);
           height: 12px;
           left: 0;
           top: calc(50% - 6px);
@@ -89,7 +89,7 @@
         &::before {
           content: " ";
           position: absolute;
-          border-left: 1px solid #999;
+          border-left: 1px solid var(--DescBlack);
           height: 12px;
           left: 0;
           top: calc(50% - 6px);
