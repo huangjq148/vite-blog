@@ -25,8 +25,10 @@ fs.writeFileSync(
 
 fs.appendFileSync(
   CONFIG_FILE_PATH,
-  `\n\nexport const info = {
-  "files": ${JSON.stringify(filePaths, null, 4)},
-  "tags": ${JSON.stringify(tags, null, 4)},
-}`
+  `\n\nexport const files = ${JSON.stringify(filePaths, null, 4)}`
+);
+
+fs.appendFileSync(
+  CONFIG_FILE_PATH,
+  `\n\nexport const categories = ${JSON.stringify(tags, null, 4)}`
 );

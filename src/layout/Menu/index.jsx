@@ -12,6 +12,7 @@ const Page = () => {
     { path: "/", label: "Home", icon: "icon-home-fill" },
     { path: "/about", label: "About", icon: "icon-user" },
     { path: "/tags", label: "Tags", icon: "icon-tag-fill" },
+    { path: "/categories", label: "Categories", icon: "icon-appstore-fill" },
   ];
   return (
     <div className={style.menuWrap}>

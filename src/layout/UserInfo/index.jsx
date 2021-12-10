@@ -1,13 +1,14 @@
 import React from "react";
 import style from "./index.module.less";
 import IconRender from "@/components/IconRender";
+import { files, categories } from "../../../config/index";
 
 const UserInfo = (props) => {
   const {} = props;
 
   const articlesInfo = [
-    { count: 0, desc: "posts" },
-    { count: 0, desc: "categories" },
+    { count: files.length, desc: "posts" },
+    { count: categories.length, desc: "categories" },
     { count: 0, desc: "tags" },
   ];
 
