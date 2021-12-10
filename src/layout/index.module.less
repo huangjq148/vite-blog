@@ -8,9 +8,30 @@
 
   .leftWrap {
     width: 240px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    max-height: 100vh;
+    z-index: 100;
   }
 
   .contentWrap {
     width: calc(100% - 250px);
+  }
+
+  @media screen and (max-width: 990px) {
+    display: block;
+    width: 100%;
+    padding: 0;
+
+    .leftWrap {
+      width: 100%;
+    }
+
+    .contentWrap {
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      margin-top: 10px;
+    }
   }
 }

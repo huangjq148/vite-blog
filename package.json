@@ -6,7 +6,8 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "genMdInfo": "node scripts/genMdInfo"
+    "genMdInfo": "node scripts/genMdInfo",
+    "deploy":"git add . && git commit -m '修改路由模式' && git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "classnames": "^2.3.1",

@@ -4,6 +4,10 @@
   border-radius: 2px;
   background-color: white;
 
+  .expandButton {
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: #222;
@@ -34,6 +38,36 @@
       &:hover {
         background-color: #f6f6f6;
       }
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    @keyframes expandMenu {
+      from {
+        height: 0;
+      }
+      to {
+        height: auto;
+      }
+    }
+    .expandButton {
+      display: block;
+      position: absolute;
+      left: 20px;
+    }
+    ul {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition-delay: 0s;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+    }
+    .ulExpand {
+      height: 108px;
+      transition-delay: 0s;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
     }
   }
 }

@@ -1,12 +1,17 @@
 import React from "react";
 
-const IconRender = ({ icon, label }) => {
+const IconRender = (props) => {
+  const { icon, label, iconSize, ...restProps } = props;
+
   return (
-    <>
-      <span className={`iconfont ${icon}`}></span>
+    <span {...restProps}>
+      <span
+        className={`iconfont ${icon}`}
+        style={{ fontSize: `${iconSize}px` }}
+      ></span>
       {label ? <>&nbsp;</> : ""}
       {label ? label : ""}
-    </>
+    </span>
   );
 };
 

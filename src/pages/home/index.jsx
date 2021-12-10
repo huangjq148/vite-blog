@@ -12,42 +12,37 @@ const Article = ({ article }) => (
       <span className={style.title}>{article.title}</span>
     </div>
     <div className={style.articleInfo}>
-      <div>
-        <IconRender
-          icon="icon-calendar"
-          label={
-            <span>
-              Posted on{" "}
-              <span className={style.underlineDashed}>
-                {article.postedTime}
-              </span>
-            </span>
-          }
-        />
-      </div>
-      <div className={style.border}>
+      <IconRender
+        icon="icon-calendar"
+        label={
+          <>
+            <span className={style.desc}>Posted on </span>
+            <span className={style.underlineDashed}>{article.postedTime}</span>
+          </>
+        }
+      />
+      <span className={style.textWithBorder}>
         <IconRender
           icon="icon-calendar-check"
           label={
-            <span>
-              Edited on{" "}
+            <>
+              <span className={style.desc}>Edited on </span>
               <span className={style.underlineDashed}>
                 {article.updateTime}
               </span>
-            </span>
+            </>
           }
         />
-      </div>
-      <div>
-        <IconRender
-          icon="icon-folder"
-          label={
-            <span>
-              In <span className={style.underline}>{article.category}</span>
-            </span>
-          }
-        />
-      </div>
+      </span>
+      <IconRender
+        icon="icon-folder"
+        label={
+          <>
+            <span className={style.desc}>In </span>
+            <span className={style.underline}>{article.category}</span>
+          </>
+        }
+      />
     </div>
     <hr />
     <div className={style.content}>
